@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:session_1/dart/notes_screen.dart';
+// import 'package:session_1/dart/notes_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const NotesScreen(),
+      home: const Register(),
     );
   }
 }
@@ -266,7 +266,7 @@ class Register extends StatelessWidget {
                           child: const Text(
                             "Register",
                           ),
-                          style: OutlinedButton.styleFrom(shape: const StadiumBorder(), backgroundColor: Colors.brown),
+                          style: OutlinedButton.styleFrom(shape: const StadiumBorder()),
                         ),
                       ),
                     ),
@@ -279,7 +279,7 @@ class Register extends StatelessWidget {
                               child: const Text(
                                 "Login",
                               ),
-                              style: OutlinedButton.styleFrom(shape: const StadiumBorder()),
+                              style: OutlinedButton.styleFrom(shape: const StadiumBorder(), backgroundColor: Colors.red),
                             ),
                       ),
                     ),
